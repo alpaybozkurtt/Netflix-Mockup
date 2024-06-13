@@ -2,8 +2,13 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import styled from "styled-components"
 
 const Card = styled.div`
-width: 20%;
-max-width: 200px;
+width: 50%;
+max-width: 300px;
+cursor: pointer;
+
+&:hover {
+   color: gray;
+}
 `
 
 const Avatar = styled.img`
@@ -12,12 +17,12 @@ border-radius: 0.2rem;
 `
 
 const Name = styled.h2`
-color: gray;
+
 text-align: center;
 `
 
 function Profile(props) {
-    const [profile, setActiveProfile] = props;
+    const {profile, setActiveProfile} = props;
 
     /*
     {
@@ -27,7 +32,7 @@ function Profile(props) {
     }
     */
 
-    const {name, avatar} = profile;
+    const { name, avatar } = profile;
 
     const history = useHistory();
 
