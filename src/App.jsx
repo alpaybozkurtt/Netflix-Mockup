@@ -15,20 +15,18 @@ function App() {
       <h1>Welcome to Netflix by Wit</h1>
     </Route>
     <Route exact path="/login">
-      <Header />
       <Login />
     </Route>
     <Route exact path="/welcome">
       <Welcome setActiveProfile={setActiveProfile}/>
     </Route>
     <Route path="/home">
-      <Header activeProfile={activeProfile}/>
       <Home activeProfile={activeProfile}/>
     </Route>
   </Switch>
   <div className="dev-navigation">
     <Link to="/">HomePage</Link>
-    <Link to="/login">Login</Link>
+    <Link to="/login" data-cy="route-login">Login</Link>
     <Link to="/welcome">Welcome</Link>
     <Link to="/home">Home</Link>
   </div>
