@@ -4,15 +4,27 @@ import Login from "./pages/Login";
 import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
 import Header from "./components/Header/Header";
+import { useState } from "react";
 
 function App() {
+  const [activeProfile, setActiveProfile] = useState(null);
   return (
     <>
   <Switch>
-  <Route exact path="/"><h1>Welcome to Netflix by Wit</h1></Route>
-  <Route exact path="/login"><Header /><Login /></Route>
-  <Route exact path="/welcome"><Welcome /></Route>
-  <Route path="/home"><Header /><Home /></Route>
+    <Route exact path="/">
+      <h1>Welcome to Netflix by Wit</h1>
+    </Route>
+    <Route exact path="/login">
+      <Header />
+      <Login />
+    </Route>
+    <Route exact path="/welcome">
+      <Welcome setActiveProfile={setActiveProfile}/>
+    </Route>
+    <Route path="/home">
+      <Header activeProfile={activeProfile}/>
+      <Home activeProfile={activeProfile}/>
+    </Route>
   </Switch>
   <div className="dev-navigation">
     <Link to="/">HomePage</Link>
