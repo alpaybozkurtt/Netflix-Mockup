@@ -6,7 +6,7 @@ import Header from "../Header/Header";
 
 const Player = styled.video`
   position: absolute;
-  z-index: 1; /* Video fragmanını öne getir */
+  z-index: 1;
   top: -100px;
   left: 0;
   width: 100%;
@@ -20,11 +20,11 @@ const Details = styled.div`
   align-items: flex-start;
   padding: 2rem;
   max-width: 40%;
-  z-index: 2; /* Detayları öne getir */
+  z-index: 2; 
 `;
 
 const PromotedVideoSection = styled.section`
-  position: relative; /* Ana bölümün pozisyonunu belirle */
+  position: relative;
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -78,7 +78,7 @@ const DarkArea = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 0; /* Arka planı geriye gönder */
+  z-index: 0;
 `;
 
 export default function Hero() {
