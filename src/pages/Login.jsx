@@ -1,9 +1,9 @@
 /*
-tanımlamamız gerek state'ler: formData, errors, isValid
-tanımlamamız gereken initial değerler: initialFormData, errorMessages
-fonksiyonlar: changeHandler, submit
-isValid: butonu disable et, tüm form elemanlarını kontrol et(useEffect).
-form yapısını
+Stateler tanımlandı: formData, errors, isValid
+initial değerler tanımlandı: initialFormData, errorMessages
+fonksiyonlar oluşturuldu: changeHandler, submit
+isValid işlevi oluşturuldu: butonu disable et, tüm form elemanlarını kontrol et(useEffect).
+form yapısı oluşturuldu
 */
 
 import axios from "axios";
@@ -113,7 +113,6 @@ export default function Login() {
     axios.post(URL, formData).then((response) => {
       setFormData(initialFormData);
       console.log(response.data);
-      //cache'e aktar
       history.push("/welcome");
     });
   }

@@ -3,7 +3,6 @@ import "./App.css";
 import Login from "./pages/Login";
 import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
-import Header from "./components/Header/Header";
 import { useState } from "react";
 
 function App() {

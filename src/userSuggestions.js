@@ -1,22 +1,30 @@
 export const userSuggestionsData = {
-    "7": [
+    7: [
         {
-            title: "Today's pick for you",
+            title: "Recommendations suitable for your preferences",
             category: "movies"
         },
         {
-            title: "Continue watching for Gamz",
+            title: "You might want to continue watching",
             category: "shows"
+        },
+        {
+            title: "Most Searched Movies",
+            category: "movies"
         }
     ],
-    "8": [
+    8: [
         {
-            title: "Today's pick for you",
+            title: "Recommendations suitable for your preferences",
             category: "movies"
         },
         {
-            title: "Continue watching for Gamz",
+            title: "You might want to continue watching",
             category: "shows"
+        },
+        {
+            title: "Most Searched Movies",
+            category: "movies"
         }
     ]
 }

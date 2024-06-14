@@ -5,13 +5,12 @@ import axios from "axios";
 
 const Card = styled.div`
 padding: 1rem;
-width: 100%;
-`
+`;
 
 const Title = styled.h2`
 color: gray;
 text-align: left;
-`
+`;
 
 function Suggestion(props) {
     const [movies, setMovies] = useState([]);
@@ -51,4 +50,4 @@ function Suggestion(props) {
     );
 }
 
-export default Suggestion
+export default Suggestion;

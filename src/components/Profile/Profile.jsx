@@ -2,12 +2,13 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import styled from "styled-components"
 
 const Card = styled.div`
-width: 50%;
+width: 25%;
 max-width: 300px;
 cursor: pointer;
+color: gray;
 
 &:hover {
-   color: gray;
+   color: white;
 }
 `
 
@@ -17,7 +18,6 @@ border-radius: 0.2rem;
 `
 
 const Name = styled.h2`
-
 text-align: center;
 `
 
@@ -40,7 +40,7 @@ function Profile(props) {
             <Avatar src={avatar} />
             <Name>{name}</Name>    
         </Card>
-    )
+    );
 }
 
-export default Profile
+export default Profile;
